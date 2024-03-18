@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --white: #fafafb;
+    --red: #8f1414;
+    --blue-ligth:#04d4c3;
+    --blue-dark: #2a73c2;
+    --green: #2c7b90;
+}
+
+body {
+    background: linear-gradient(to bottom,var(--red), var(--blue-ligth));
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+}
+/*PROFILE*/
+
+.profile{
+    color: var(--white);
+}
+
+.profile span{
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+#date{
+    color: var(--white);
+    padding: 50px 0 5px 0;
+}
+
+/*ADD TASK*/
+
+.add-task{
+    background-color: var(--white);
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 70px;
+    margin: 40px 0;
+}
+
+.add-task input{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white);
+}
+.add-task i{
+    font-size: 50px;
+    color: var(--red);
+}
+
+.add-task i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.add-task input::placeholder{
+    font-size: 1.1rem;
+    color: var(--red);
+}
+
+/*section-task*/
+
+.section-task h3{
+color: var(--white);
+margin-bottom: 20px;
+}
+
+.section-task li{
+    display: flex;
+    background: linear-gradient(to bottom, var(--blue-dark), var(--green));
+    border-radius: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    color: var(--white);
+}
+
+.section-task i{
+font-size: 25px;
+}
+
+.section-task i:hover{
+    color: var(--blue-ligth);
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.section-task >ul p {
+    font-size: 1.2rem;
+    margin-left: 25px;
+}
+
+.line-through{
+    text-decoration: line-through;
+    color: var(--blue-ligth);
+}
